@@ -189,13 +189,13 @@ if __name__ == '__main__':
     parser.add_argument('--seed', type=int, default=42)
 
     # Code args
-    parser.add_argument('--code_type', type=str, default='BCH',
+    parser.add_argument('--code_type', type=str, default='POLAR',
                         choices=['BCH', 'POLAR', 'LDPC', 'CCSDS', 'MACKAY'])
-    parser.add_argument('--code_k', type=int, default=16)
-    parser.add_argument('--code_n', type=int, default=31)
+    parser.add_argument('--code_k', type=int, default=32)
+    parser.add_argument('--code_n', type=int, default=64)
 
     # model args
-    parser.add_argument('--N_dec', type=int, default=2)
+    parser.add_argument('--N_dec', type=int, default=6)
     parser.add_argument('--d_model', type=int, default=32)
     parser.add_argument('--h', type=int, default=8)
 
