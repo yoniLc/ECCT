@@ -193,6 +193,7 @@ if __name__ == '__main__':
                         choices=['BCH', 'POLAR', 'LDPC', 'CCSDS', 'MACKAY'])
     parser.add_argument('--code_k', type=int, default=32)
     parser.add_argument('--code_n', type=int, default=64)
+    parser.add_argument('--standardize', action='store_true')
 
     # model args
     parser.add_argument('--N_dec', type=int, default=6)
@@ -211,7 +212,7 @@ if __name__ == '__main__':
     code.k = args.code_k
     code.n = args.code_n
     code.code_type = args.code_type
-    G, H = Get_Generator_and_Parity(code,standard_form=True)
+    G, H = Get_Generator_and_Parity(code,standard_form=args.standardize)
     code.generator_matrix = torch.from_numpy(G).transpose(0, 1).long()
     code.pc_matrix = torch.from_numpy(H).long()
     args.code = code
