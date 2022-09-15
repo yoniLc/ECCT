@@ -1,6 +1,6 @@
 # Error Correction Code Transformer
 
-Implementation of the Error Correction Code Transformer described in ["Error Correction Code Transformer"](https://arxiv.org/abs/2203.14966).
+Implementation of the Error Correction Code Transformer described in ["Error Correction Code Transformer (NeurIPS 2022)"](https://arxiv.org/abs/2203.14966).
 
 <p align="center">
 <img src="Codes_DB/z_ecct_image.png" width="550px">
