@@ -16,7 +16,7 @@ Error correction code is a major part of the communication physical layer, ensur
 ## Script
 Use the following command to train, on GPU 0, a 6 layers ECCT of dimension 32 on the POLAR(64,32) code:
 
-`python Main.py --gpu=0 --N_dec=6 --d_model=32 --code_type=POLAR --code_n=64 --code_k=32`
+`python Main.py --gpus=0 --N_dec=6 --d_model=32 --code_type=POLAR --code_n=64 --code_k=32`
 
 ## Reference
     @article{choukroun2022error,
